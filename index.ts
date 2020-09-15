@@ -7,15 +7,6 @@ const { args } = Deno;
 const DEFAULT_PORT = 8000;
 const argPort = parse(args).port;
 
-const client = new SmtpClient();
-const { SEND_EMAIL, PWD, RECV_EMAIL } = Deno.env.toObject();
-const connectConfig: any = {
-    hostname: "smtp.gmail.com",
-    port: 465,
-    username: SEND_EMAIL,
-    password: PWD,
-};
-
 const app = new Application();
 
 // send email
