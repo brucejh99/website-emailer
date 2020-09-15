@@ -1,7 +1,7 @@
 import { Application, Router } from "https://deno.land/x/oak/mod.ts";
 import * as flags from 'https://deno.land/std/flags/mod.ts';
 import { SmtpClient } from 'https://deno.land/x/smtp/mod.ts';
-import 'https://deno.land/x/dotenv/load.ts';
+// import 'https://deno.land/x/dotenv/load.ts';
 
 const { args, exit } = Deno;
 const DEFAULT_PORT = 8000;
